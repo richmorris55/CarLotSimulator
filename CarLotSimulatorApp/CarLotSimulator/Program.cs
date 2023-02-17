@@ -45,7 +45,8 @@ namespace CarLotSimulator
             car1.Make = "Cheverlet";
             car1.Model = "Blazer";
             car1.IsDriveable = true;
-
+            CarLot.numberOfCars++;
+            Console.WriteLine($"We have {CarLot.numberOfCars} car.");
 
 
             Console.WriteLine();
@@ -71,7 +72,8 @@ namespace CarLotSimulator
 
             car2.MakeEngineNoise(car2.EngineNoise);
             car2.MakeHonkNoise(car2.HonkNoise);
-
+            CarLot.numberOfCars++;
+            Console.WriteLine($"Now we have {CarLot.numberOfCars} cars.");
 
 
 
@@ -82,7 +84,8 @@ namespace CarLotSimulator
 
             car3.MakeHonkNoise(car3.HonkNoise);
             car3.MakeEngineNoise(car3.EngineNoise);
-
+            CarLot.numberOfCars++;
+            Console.WriteLine($"Finally, we now have {CarLot.numberOfCars} cars.");
 
 
             Console.WriteLine();
